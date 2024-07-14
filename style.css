@@ -1,0 +1,404 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+.social-links {
+    list-style: none;
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info span {
+    margin-left: 18px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.btn {
+    background: #ffcc00;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a.btn:hover {
+    background: #e6b800;
+}
+
+/* Hero Section */
+#hero {
+    background: url('./images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    height: 81vh;
+    position: relative;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+}
+.hero-buttons .btn {
+    background: linear-gradient(#3f5efb, #fc466b);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero-buttons .btn:hover {
+    background: #e73370;
+}
+
+/* Features Section */
+#features {
+    background: linear-gradient(#3f5efb, #fc466b);
+    padding: 40px 0;
+    text-align: center;
+}
+#features .container{
+    display: flex;
+    justify-content: space-around;
+}
+.feature {
+    width: 30%;
+    margin: 1.66%;
+    padding: 20px;
+    color: white;
+}
+
+
+.feature i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+#about .container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-half{
+    width: 40%;
+    text-align: left;
+}
+.about-half hr{
+    width: 10%;
+    height: 5px;
+    border-radius: 10px;
+    background: linear-gradient(#3f5efb, #fc466b);
+}
+.about-half a{
+    text-decoration: none;
+    color: #ddd;
+}
+.about-half button{
+    width: 30%;
+    height: 40px;
+    background: linear-gradient(#3f5efb, #fc466b);
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.about-half2{
+    width: 40%;
+    text-align: left;
+    position: relative;
+}
+.about-img{
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Services Section */
+#services {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+#services h2{
+    margin-left: 4%;
+}
+#services hr{
+    width: 5%;
+    height: 5px;
+    margin-left: 4%;
+    border-radius: 10px;
+    background: linear-gradient(#3f5efb, #fc466b);
+}
+#services .container{
+    display: flex;
+    justify-content: space-around;
+}
+.service {
+    width: 30%;
+    margin: 1.66%;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.service:hover{
+    cursor: pointer;
+}
+.service img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.icon-div{
+    display: flex;
+}
+.service-icon{
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-top, .header-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .social-links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info span {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-top: 10px;
+    }
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+    #hero{
+        height: 100vh;
+    }
+    .hero-text h3 {
+        font-size: 1.25rem;
+    }
+    .hero-buttons .btn {
+        padding: 5px 10px;
+    }
+    .feature {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .about-half, .about-half2 {
+        width: 100%;
+    }
+    #services .container {
+        justify-content: space-between;
+    }
+    .service {
+        width: 33%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 5px 0;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    #hero{
+        height: 60vh;
+    }
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+    .hero-text h3 {
+        font-size: 1rem;
+    }
+    .hero-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-buttons .btn {
+        padding: 2px 5px;
+        font-size: 0.5rem;
+    }
+    #features .container {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    #about .container {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    #services .container {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .service{
+        width: 80%;
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-top, .header-bottom {
+        align-items: center;
+    }
+    .social-links li, .contact-info span {
+        margin: 5px 0;
+    }
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    .hero-text h3 {
+        font-size: 0.875rem;
+    }
+    .hero-buttons .btn {
+        padding: 6px 12px;
+        margin: 5px;
+    }
+    #features .container {
+        padding: 0 5px;
+    }
+    #about .container {
+        padding: 0 5px;
+    }
+    #services .container {
+        padding: 0 5px;
+    }
+}
